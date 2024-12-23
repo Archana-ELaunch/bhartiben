@@ -1,0 +1,96 @@
+import type { Config } from "tailwindcss";
+
+const config: Config = {
+  content: [
+    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+  ],
+  theme: {
+    screens: {
+      xxsm: "320px",
+      xsm: "480px",
+      sm: '576px',
+      md: '768px',
+      lg: '992px',
+      xl: '1200px',
+      xxl: '1400px',
+      '3xl': '1640px',
+    },
+
+    extend: {
+      fontFamily: {
+        poppins: ['var(--font-poppins)'],
+        architects: ['var(--font-architects)'],
+        lora: ['var(--font-lora)'],
+        cursive: ['var(--font-cursive)'],
+        lily: ['var(--font-lily)'],
+        pt: ['var(--font-pt)'],
+      },
+      colors: {
+        greenMain: "#5d7b38",
+        redMain: "#de4728",
+        greenMainLight: "#cfd7c3",
+        yellowMainLight: "#f8f6ec",
+        lightGray: "#f3f3f3",
+        textGray: "#838383",
+        lightGreen: "#ECFFEC",
+        darkGreen: "#3BB77E",
+        lightOrange: "#FEEFEA",
+        lightBlue: "#67BCEE",
+        lightPink: "#f5d8e2",
+        lightYellow: "#FFFCEB",
+        lightRed: "#FEEFEA",
+        lightPurpule: "#FFF3FF",
+        lightPerrot: "#F2FCE4",
+      },
+      fontSize: {
+        10: "10px",
+        12: "12px",
+        14: "14px",
+        16: "16px",
+        18: "18px",
+        20: "20px",
+        22: "22px",
+        24: "24px",
+        28: "28px",
+        30: "30px",
+        32: "32px",
+        34: "34px",
+        38: "38px",
+        42: "42px",
+        44: "44px",
+        46: "46px",
+        52: "52px",
+        56: "56px",
+        58: "58px",
+        64: "64px",
+      },
+      fontWeight: {
+        200: "200",
+        300: "300",
+        400: "400",
+        500: "500",
+        600: "600",
+        700: "700",
+        800: "800",
+        900: "900",
+        1000: "1000",
+      },
+      container: {
+        center: true,
+        padding: {
+          DEFAULT: '14px',
+          lg: '24px',
+        },
+      },
+      backgroundImage: {
+        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
+        "gradient-conic":
+          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      },
+    },
+  },
+  plugins: [],
+};
+export default config;
